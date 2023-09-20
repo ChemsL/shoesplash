@@ -1,0 +1,142 @@
+body {
+    background-color: lightgray;
+}
+
+.container1 {
+    background-color: pink;
+
+    img {
+        margin-left: 5rem;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+    }
+}
+
+.container2 {
+    #slider {
+        h2 {
+            background-color: rgb(255, 192, 203, 0.5);
+            border: greenyellow solid 2px;
+            width: 40%;
+        }
+
+        img {
+            display: flex;
+            width: 60%;
+            height: auto;
+            align-items: center;
+            margin: auto;
+            border: solid white 8px;
+            margin-top: 3rem;
+        }
+    }
+
+    #select {
+        
+        background-color: white;
+        width: 60%;
+        height: auto;
+        margin-top: 1rem;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+h1{
+    width: 100%;
+}
+        .escarpin {
+           
+            justify-content: space-evenly;
+            margin: auto;
+
+        }
+
+    }
+
+    #news {
+        background-color: lightgrey;
+        width: 60%;
+        height: auto;
+        margin-top: 1rem;
+        margin: 0 auto;
+        display: flex;
+        margin-top: 2rem;
+    
+        
+
+        #new,
+        #best,
+        #crush {
+            justify-content: space-evenly;
+            background-color: white;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        #new{
+            h2{
+                background-color: purple;
+            
+            }
+        }
+        #best{
+            h2{
+                background-color: greenyellow;
+            }
+        }
+        #crush{
+            h2{
+                background-color: blue;
+            }
+        }
+        h2{
+            background-size: cover;
+            &:before {
+                content: url(../img/logo4.png);
+                margin-right: 1rem;
+            }
+        }
+    }
+}
+
+footer{
+    #info{
+        display: flex;
+        height: 6rem;
+        background-color: rgba($color: #e003ce, $alpha: 1.0);
+        justify-content: space-between;
+        margin: 0 auto;
+        font-size: 2rem;
+        margin-top: 2rem;
+        article {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        
+        }
+    }
+    #bottombar{
+        display: flex;
+        justify-content: space-evenly;
+        background-color: lightcoral;
+        margin: 0 auto;
+
+        
+    }
+    
+    h2, li{
+        list-style-type: none;
+        text-align: center;
+    }
+    h2{
+        margin-left: 2rem;
+    }
+
+}
