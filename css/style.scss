@@ -1,9 +1,38 @@
 body {
     background-color: lightgray;
+    header{
+        i{
+            color: palevioletred;
+            font-size: 4rem;
+            margin: auto;
+        }
+    }
 }
 
 .container1 {
-    background-color: pink;
+    background-color: #f1dbdf;
+    padding-bottom: 1.5rem;
+    p{
+        span{
+            font-weight: bold;
+        }
+    }
+
+    #cart {
+        float: right;
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: 8rem;
+        height: auto;
+        width: 10rem;
+        .left {
+            float: left;
+        }
+
+        .rightclear {
+            clear: right;
+        }
+    }
 
     img {
         margin-left: 5rem;
@@ -17,16 +46,24 @@ body {
         a {
             text-decoration: none;
             color: black;
+            text-transform: uppercase;
         }
     }
 }
 
 .container2 {
     #slider {
+        margin-bottom: 3rem;
         h2 {
-            background-color: rgb(255, 192, 203, 0.5);
-            border: greenyellow solid 2px;
-            width: 40%;
+            background-color: rgb(255, 192, 203, 0.8);
+            width: 30%;
+            margin: 1rem auto auto 22.5rem;
+            position: absolute;
+
+            span{
+                font-weight: 100;
+            }
+            
         }
 
         img {
@@ -35,79 +72,100 @@ body {
             height: auto;
             align-items: center;
             margin: auto;
-            border: solid white 8px;
-            margin-top: 3rem;
+            border: solid white 1px;
+            margin-top: 1rem;
         }
+       
     }
 
     #select {
-        
+
+
         background-color: white;
         width: 60%;
         height: auto;
-        margin-top: 1rem;
         margin: 0 auto;
         display: flex;
         flex-wrap: wrap;
-h1{
-    width: 100%;
-}
-        .escarpin {
-           
-            justify-content: space-evenly;
-            margin: auto;
 
+        .escarpin{
+        opacity: 0.49;
+        }
+        .escarpin:hover{
+            opacity: 1;
         }
 
     }
-
-    #news {
-        background-color: lightgrey;
-        width: 60%;
-        height: auto;
-        margin-top: 1rem;
-        margin: 0 auto;
-        display: flex;
-        margin-top: 2rem;
     
-        
+}
 
-        #new,
-        #best,
-        #crush {
-            justify-content: space-evenly;
-            background-color: white;
-            margin: 0 auto;
-            padding: 2rem;
+    
+
+    h1 {
+        width: 100%;
+    }
+
+    .escarpin {
+
+        justify-content: space-evenly;
+        margin: auto;
+
+    }
+
+
+
+#news {
+    background-color: lightgrey;
+    width: 60%;
+    height: auto;
+    margin-top: 1rem;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 2rem;
+
+
+
+    #new,
+    #best,
+    #crush {
+        justify-content: space-evenly;
+        background-color: white;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+
+    #new {
+        h2 {
+            background-color: purple;
+
         }
-        #new{
-            h2{
-                background-color: purple;
-            
-            }
+    }
+
+    #best {
+        h2 {
+            background-color: greenyellow;
         }
-        #best{
-            h2{
-                background-color: greenyellow;
-            }
+    }
+
+    #crush {
+        h2 {
+            background-color: blue;
         }
-        #crush{
-            h2{
-                background-color: blue;
-            }
-        }
-        h2{
-            background-size: cover;
-            &:before {
-                content: url(../img/logo4.png);
-                margin-right: 1rem;
-            }
+    }
+
+    h2 {
+        background-size: cover;
+
+        &:before {
+            content: url(../img/logo4.png);
+            margin-right: 1rem;
         }
     }
 }
 
-footer{
-    #info{
+
+footer {
+    #info {
         display: flex;
         height: 6rem;
         background-color: rgba($color: #e003ce, $alpha: 1.0);
@@ -115,27 +173,31 @@ footer{
         margin: 0 auto;
         font-size: 2rem;
         margin-top: 2rem;
+
         article {
             display: flex;
             flex-direction: column;
             text-align: center;
-        
+
         }
     }
-    #bottombar{
+
+    #bottombar {
         display: flex;
         justify-content: space-evenly;
         background-color: lightcoral;
         margin: 0 auto;
 
-        
+
     }
-    
-    h2, li{
+
+    h2,
+    li {
         list-style-type: none;
         text-align: center;
     }
-    h2{
+
+    h2 {
         margin-left: 2rem;
     }
 
